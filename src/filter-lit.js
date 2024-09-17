@@ -26,7 +26,46 @@ export class FilterLit extends LitElement{
                                         <option value="dog">Perro</option>
                                         <option value="cat">Gato</option>
                                     </select>
-                                    <svg class="filter-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down sc-iGgWBj ffxCYX" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
+                                    <svg class="filter-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="filter">
+                            <div class="filter-elements">
+                                <div class="filter-content">
+                                    <label for="pet_type" class="filter-label"></label>
+                                    <select class="filter-select" id="pet_type" name="gender" placeholder="">
+                                        <option value="" disabled selected>Género</option>
+                                        <option value="male">Macho</option>
+                                        <option value="famale">Hembra</option>
+                                    </select>
+                                    <svg class="filter-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="filter">
+                            <div class="filter-elements">
+                                <div class="filter-content">
+                                    <label for="pet_type" class="filter-label"></label>
+                                    <select class="filter-select" id="pet_type" name="gender" placeholder="">
+                                        <option value="" disabled selected>Raza</option>
+                                        <option value="male">Huski</option>
+                                        <option value="famale">Pitbull</option>
+                                    </select>
+                                    <svg class="filter-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="filter">
+                            <div class="filter-elements">
+                                <div class="filter-content">
+                                    <label for="pet_type" class="filter-label"></label>
+                                    <select class="filter-select" id="pet_type" name="gender" placeholder="">
+                                        <option value="" disabled selected>Ubicación</option>
+                                        <option value="male">Ciudad de México</option>
+                                        <option value="famale">Estado de México</option>
+                                    </select>
+                                    <svg class="filter-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
                                 </div>
                             </div>
                         </form>
@@ -50,6 +89,10 @@ export class FilterLit extends LitElement{
                 margin-bottom: 2.5rem;
             }
             .galery-filters{
+                display: grid;
+                -webkit-box-align: stretch;
+                align-items: stretch;
+                gap: 1.5rem;
                 grid-template-columns: repeat(auto-fit, minmax(min(15.625rem, 100%), 1fr));
             }
             .filter{
@@ -58,7 +101,6 @@ export class FilterLit extends LitElement{
                 unicode-bidi: isolate;
             }
             .filter-elements{
-                -webkit-box-align: center;
                 align-items: center;
                 background: rgba(255, 255, 255, 0.8);
                 backdrop-filter: blur(1rem);
@@ -88,21 +130,24 @@ export class FilterLit extends LitElement{
             }
 
             .filter-select{
+                appearance: none;
                 cursor: pointer;
                 padding-right: 3.5rem;
                 appearance: none;
                 background: transparent;
                 border-radius: 62.5rem;
                 border: 1px solid rgb(244, 244, 244);
-                color: var(--c-black);
-                font-family: var(--main-font);
                 font-size: 1rem;
                 padding: 1.5rem 3.5rem 1.5rem 2rem;
                 position: relative;
-                transition: border-color 0.2s;
+                transition: outline 0.2s;
                 user-select: none;
                 width: 100%;
                 z-index: 2;
+            }
+            select:focus { 
+                outline: 1px solid #de6061;
+            
             }
             .filter-svg{
                 position: absolute;
