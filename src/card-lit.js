@@ -110,6 +110,28 @@ export class CardLit extends LitElement{
             .main-card:hover .card-more{
                 opacity:1;
             }
+
+            @keyframes show {
+                from{
+                    opacity: 0;
+                    scale: 25%;
+                }
+                
+                to {
+                    opacity: 1;
+                    scale: 100%;
+                }
+            }
+
+            a{
+                view-timeline-name: --element;
+                view-timeline-axis: block;
+            
+                animation-timeline: --element;
+                animation-name: show;
+
+                animation-range: entry 0% cover 50%;
+            }
         `
     }
 }
