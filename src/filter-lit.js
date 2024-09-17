@@ -33,8 +33,8 @@ export class FilterLit extends LitElement{
                         <form class="filter">
                             <div class="filter-elements">
                                 <div class="filter-content">
-                                    <label for="pet_type" class="filter-label"></label>
-                                    <select class="filter-select" id="pet_type" name="gender" placeholder="">
+                                    <label for="gender" class="filter-label"></label>
+                                    <select class="filter-select" id="gender" name="gender" placeholder="">
                                         <option value="" disabled selected>Género</option>
                                         <option value="male">Macho</option>
                                         <option value="famale">Hembra</option>
@@ -46,11 +46,11 @@ export class FilterLit extends LitElement{
                         <form class="filter">
                             <div class="filter-elements">
                                 <div class="filter-content">
-                                    <label for="pet_type" class="filter-label"></label>
-                                    <select class="filter-select" id="pet_type" name="gender" placeholder="">
+                                    <label for="race" class="filter-label"></label>
+                                    <select class="filter-select" id="race" name="race" placeholder="">
                                         <option value="" disabled selected>Raza</option>
-                                        <option value="male">Huski</option>
-                                        <option value="famale">Pitbull</option>
+                                        <option value="akita">akita</option>
+                                        <option value="chihuahua">chihuahua</option>
                                     </select>
                                     <svg class="filter-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
                                 </div>
@@ -60,15 +60,32 @@ export class FilterLit extends LitElement{
                             <div class="filter-elements">
                                 <div class="filter-content">
                                     <label for="pet_type" class="filter-label"></label>
-                                    <select class="filter-select" id="pet_type" name="gender" placeholder="">
+                                    <select class="filter-select" id="ubication" name="ubication" placeholder="">
                                         <option value="" disabled selected>Ubicación</option>
-                                        <option value="male">Ciudad de México</option>
-                                        <option value="famale">Estado de México</option>
+                                        <option value="cdmx">Ciudad de México</option>
+                                        <option value="edmx">Estado de México</option>
                                     </select>
                                     <svg class="filter-svg" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></svg>
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+
+                <div class="galery-images">
+                    <div class="galery-images-separator">
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
                     </div>
                 </div>
             </div>
@@ -144,6 +161,7 @@ export class FilterLit extends LitElement{
                 user-select: none;
                 width: 100%;
                 z-index: 2;
+                color: #81828A;
             }
             select:focus { 
                 outline: 1px solid #de6061;
@@ -162,6 +180,7 @@ export class FilterLit extends LitElement{
                 outline: none;
                 vertical-align: middle;
                 user-select: none;
+                color: #81828A;
             }
             option{
                 font-weight: normal;
@@ -171,6 +190,15 @@ export class FilterLit extends LitElement{
                 min-block-size: 1.2em;
                 padding-inline: 2px;
                 white-space: nowrap;
+            }
+            .galery-images{
+                padding: 0.625rem;
+            }
+            .galery-images-separator{
+                display: grid;
+                align-items: stretch;
+                gap: 2.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(min(15.625rem, 100%), 1fr));
             }
         `;
     }

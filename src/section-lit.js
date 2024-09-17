@@ -21,7 +21,6 @@ export class SectionLit extends LitElement{
     }
 
     render() {
-        console.log(this.img);
         return html`
             <div class="principal">
                 <section class="principal-info">
