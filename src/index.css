@@ -37,3 +37,8 @@ header  > div{
   position: relative;
   z-index: 1;
 }
+
+main { 
+  display: block;
+  unicode-bidi: isolate;
+}
