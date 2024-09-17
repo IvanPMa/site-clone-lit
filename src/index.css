@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+  outline: 0px;
+}
+
+body{
+  display: block;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header{
+  color: white;
+  grid-area: nav;
+  height: 4.375rem;
+  position: fixed;
+  top: 0%;
+  user-select: none;
+  width: 100%;
+  z-index: 999;
+  background: #999999;
+  backdrop-filter: blur(1rem);
+}
+
+header  > div{
+  top: 0%;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
