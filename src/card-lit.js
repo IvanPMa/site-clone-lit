@@ -96,6 +96,7 @@ export class CardLit extends LitElement{
             }
             .card-title{
                 font-size: 1.125rem;
+                font-weight:bold;
             }
             .card-subtitle{
                 color: #81828A;

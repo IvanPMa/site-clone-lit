@@ -74,18 +74,18 @@ export class FilterLit extends LitElement{
 
                 <div class="galery-images">
                     <div class="galery-images-separator">
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
-                        <card-lit race="Akita" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3280000/3283000/3283115_800.jpg"></card-lit>
+                        <card-lit race="Yorkshire Terrier" gender="Hembra" date="18/05/2024" img="https://petkey.blob.core.windows.net/resource/images/3260000/3265000/3265062_800.jpg"></card-lit>
+                        <card-lit race="Pembroke Welsh Corgi" gender="Hembra" date="02/06/2024" img="https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290193_800.jpg"></card-lit>
+                        <card-lit race="Fluffy French Bulldog" gender="Macho" date="12/05/2024" img="https://petkey.blob.core.windows.net/resource/images/3250000/3255000/3255012_800.jpg"></card-lit>
+                        <card-lit race="Shin Tzu" gender="Macho" date="15/06/2024" img="https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290192_800.jpg"></card-lit>
+                        <card-lit race="Poodle" gender="Macho" date="08/06/2024" img="https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290187_800.jpg"></card-lit>
+                        <card-lit race="Chow Chow" gender="Macho" date="29/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290166_800.jpg"></card-lit>
+                        <card-lit race="Pembroke Welsh Corgi" gender="Hembra" date="25/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3240000/3244000/3244760_800.jpg"></card-lit>
+                        <card-lit race="Border Collie" gender="Hembra" date="14/05/2024" img="https://petkey.blob.core.windows.net/resource/images/3240000/3244000/3244725_800.jpg"></card-lit>
+                        <card-lit race="Pomeranian" gender="Macho" date="23/06/2024" img="https://petkey.blob.core.windows.net/resource/images/3290000/3298000/3298297_800.jpg"></card-lit>
+                        <card-lit race="Samoyed" gender="Hembra" date="15/06/2024" img="https://petkey.blob.core.windows.net/resource/images/3290000/3298000/3298190_800.jpg"></card-lit>
+                        <card-lit race="Wolfdog" gender="Hembra" date="21/06/2024" img="https://petkey.blob.core.windows.net/resource/images/3290000/3298000/3298267_800.jpg"></card-lit>
+                        <card-lit race="Siberian Husky" gender="Macho" date="05/04/2024" img="https://petkey.blob.core.windows.net/resource/images/3250000/3254000/3254961_800.jpg"></card-lit>
                     </div>
                 </div>
             </div>
