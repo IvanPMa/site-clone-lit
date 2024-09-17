@@ -3,7 +3,9 @@ import { LitElement, html, css } from "lit";
 export class SectionLit extends LitElement{
     static get properties(){
         return { 
-            title : {type: String}, 
+            textOne : {type: String},
+            textTwo: {type: String},
+            textMarkable : { type : String },
             description: {type: String},
             img: {type: String }
         }
@@ -11,12 +13,15 @@ export class SectionLit extends LitElement{
 
     constructor(){
         super();
-        this.title = "";
+        this.textOne = "";
+        this.textTwo = "";
+        this.textMarkable = "";
         this.description = "";
         this.img = "";
     }
 
     render() {
+        console.log(this.img);
         return html`
             <div class="principal">
                 <section class="principal-info">
@@ -26,16 +31,16 @@ export class SectionLit extends LitElement{
                                 <div class="text">
                                     <div class="text-title">
                                         <h1 class="text-title-content">
-                                            En petland podrás encontrar <span class="featured">gran variedad</span> de razas de cachorros
+                                            ${this.textOne} <span class="featured">gran variedad</span> ${this.textTwo}
                                         </h1>
                                     </div>
                                     <div class="text-description">
-                                        <p class="text-description-content">Nosotros te ayudamos a encontrar la más adecuada para ti, contamos con asesores especializados.</p>
+                                        <p class="text-description-content">${this.description}</p>
                                     </div>
                                 </div>
                                 <div class="picture">
                                     <div class="picture-body">
-                                        <img class="picture-img"src="https://petlandmexico.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fheader-cachorros.c230f05e.jpg&w=2048&q=75">
+                                        <img class="picture-img" src=${this.img}>
                                     </div>
                                 </div>
                             </div>
