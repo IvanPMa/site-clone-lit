@@ -42,3 +42,8 @@ main {
   display: block;
   unicode-bidi: isolate;
 }
+
+.content-info{
+  padding: clamp(2.5rem, 1.7352rem + 3.8241vw, 5rem) 0rem;
+}
+
