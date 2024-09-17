@@ -64,7 +64,6 @@ export class NavLit extends LitElement {
             user-select: none;
             width: 100%;
             z-index: 999;
-            backdrop-filter: blur(1rem);
         }
         .sub-container{
             display: block;
