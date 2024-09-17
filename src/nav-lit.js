@@ -3,56 +3,41 @@ import { LitElement, css, html } from 'lit';
 export class NavLit extends LitElement {
     static get properties() {
         return {
-            name: {type:String}
+            img: {type:String},
+            buttons: {type: Array}
         }
     }
 
     constructor() {
         super();
-        this.name = "Ivan"
+        this.img = "";
+        this.buttons = [];
     }
 
     render(){
+        console.log(this.buttons);
         return html`
             <div class="container">
                 <div class="sub-container">
                     <div class="sub-container-body">
                         <div class="elements">
                             <a class="first-element" href="/">
-                                <img class="logo" title="Petland" src="https://petlandmexico.com/_next/static/media/logo-white.2d8b986c.svg">
+                                <img class="logo" title="Petland" src=${this.img}>
                             </a>
 
                             <div class="second-element">
                                 <ul class="buttons">
-                                    <li>
-                                        <a href="/" class="button-link">
-                                            Cachorros
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/" class="button-link">
-                                            Tienda
-                                        </a>
-                                    </li>
+                                    ${this.buttons.map(
+                                        (element) =>
+                                            html`
+                                                <li>
+                                                    <a href="/" class="button-link">
+                                                        ${element}
+                                                    </a>
+                                                </li>
+                                                `
+                                    )}
                                     
-                                    <li>
-                                        <a href="/" class="button-link">
-                                            Sucursales
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/" class="button-link">
-                                            Petland
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="/" class="button-link">
-                                            Contacto
-                                        </a>
-                                    </li>
                                 </ul>
                             </div>
 
