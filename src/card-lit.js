@@ -1,48 +1,57 @@
 import { LitElement, html, css } from "lit";
+import data from './data.json'
+
 
 export class CardLit extends LitElement{
     static get properties(){
         return{
-            race:{ type: String },
-            img:{type:String},
-            gender:{type:String},
-            date:{type:String}
-
+            items: {type:Object}
         }
     }
 
     constructor(){
         super();
-        this.race = "";
-        this.img = "";
-        this.gender = "";
-        this.date = "";
+        this.items = data.pets;
     }
 
     render(){
+        console.log(this.items)
         return html`
-        <div class="main-card">
-            <a class="card" href="card">
-                <img class="card-img"  src=${this.img}>
-                <div class="card-info">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shield-dog" class="card-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em" font-size="1.25rem" >
-                        <path fill="currentColor" d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM160.9 286.2c4.8 1.2 9.9 1.8 15.1 1.8c35.3 0 64-28.7 64-64V160h44.2c12.1 0 23.2 6.8 28.6 17.7L320 192h64c8.8 0 16 7.2 16 16v32c0 44.2-35.8 80-80 80H272v50.7c0 7.3-5.9 13.3-13.3 13.3c-1.8 0-3.6-.4-5.2-1.1l-98.7-42.3c-6.6-2.8-10.8-9.3-10.8-16.4c0-2.8 .6-5.5 1.9-8l15-30zM160 160h40 8v32 32c0 17.7-14.3 32-32 32s-32-14.3-32-32V176c0-8.8 7.2-16 16-16zm128 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"></path>
-                    </svg>
-                    <div class="card-description">
-                        <p class="card-title">
-                            ${this.race}
-                        </p>
-                        <span class="card-subtitle">${this.gender}<!-- --> - <!-- -->${this.date}</span>
-                        <span class="card-more">Conoce más</span>
+        <div class="galery-images-separator">
+        ${this.items.map(
+            (element) =>
+                html`
+                    <div class="main-card">
+                        <a class="card" href="card">
+                            <img class="card-img"  src=${element.img}>
+                            <div class="card-info">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shield-dog" class="card-svg" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="height:1em" font-size="1.25rem" >
+                                    <path fill="currentColor" d="M269.4 2.9C265.2 1 260.7 0 256 0s-9.2 1-13.4 2.9L54.3 82.8c-22 9.3-38.4 31-38.3 57.2c.5 99.2 41.3 280.7 213.6 363.2c16.7 8 36.1 8 52.8 0C454.7 420.7 495.5 239.2 496 140c.1-26.2-16.3-47.9-38.3-57.2L269.4 2.9zM160.9 286.2c4.8 1.2 9.9 1.8 15.1 1.8c35.3 0 64-28.7 64-64V160h44.2c12.1 0 23.2 6.8 28.6 17.7L320 192h64c8.8 0 16 7.2 16 16v32c0 44.2-35.8 80-80 80H272v50.7c0 7.3-5.9 13.3-13.3 13.3c-1.8 0-3.6-.4-5.2-1.1l-98.7-42.3c-6.6-2.8-10.8-9.3-10.8-16.4c0-2.8 .6-5.5 1.9-8l15-30zM160 160h40 8v32 32c0 17.7-14.3 32-32 32s-32-14.3-32-32V176c0-8.8 7.2-16 16-16zm128 48a16 16 0 1 0 -32 0 16 16 0 1 0 32 0z"></path>
+                                </svg>
+                                <div class="card-description">
+                                    <p class="card-title">
+                                        ${element.race}
+                                    </p>
+                                    <span class="card-subtitle">${element.gender}<!-- --> - <!-- -->${element.date}</span>
+                                    <span class="card-more">Conoce más</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                </div>
-            </a>
+                `
+        )}
         </div>
         `;
     }
 
     static get styles(){
         return css`
+            .galery-images-separator{
+                display: grid;
+                align-items: stretch;
+                gap: 2.5rem;
+                grid-template-columns: repeat(auto-fit, minmax(min(15.625rem, 100%), 1fr));
+            }
             .main-card{
                 transition: opacity 1000ms, transform 1000ms;
                 opacity: 1;

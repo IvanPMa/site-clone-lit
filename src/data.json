@@ -1,0 +1,78 @@
+{   
+    "pets": [
+        {
+            "race" : "Yorkshire Terrier",
+            "gender" : "Hembra",
+            "date" : "18/05/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3260000/3265000/3265062_800.jpg"
+        },
+        {
+            "race" : "Pembroke Welsh Corgi",
+            "gender" : "Hembra",
+            "date" : "02/06/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290193_800.jpg"
+        },
+        
+        {
+            "race" : "Fluffy French Bulldog",
+            "gender" : "Macho",
+            "date" : "12/05/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3250000/3255000/3255012_800.jpg"
+        },
+        {
+            "race" : "Shin Tzu",
+            "gender" : "Macho",
+            "date" : "5/06/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290192_800.jpg"
+        },
+        {
+            "race" : "Poodle",
+            "gender" : "Macho",
+            "date" : "08/06/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290187_800.jpg"
+        },
+        {
+            "race" : "Chow Chow",
+            "gender" : "Macho",
+            "date" : "29/04/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3290000/3290000/3290166_800.jpg"
+        },
+        {
+            "race" : "Pembroke Welsh Corgi",
+            "gender" : "Hembra",
+            "date" : "25/04/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3240000/3244000/3244760_800.jpg"
+        },
+        {
+            "race" : "Border Collie",
+            "gender" : "Hembra",
+            "date" : "14/05/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3240000/3244000/3244725_800.jpg"
+        },
+        {
+            "race" : "Pomeranian",
+            "gender" : "Macho",
+            "date" : "23/06/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3290000/3298000/3298297_800.jpg"
+        },
+        {
+            "race" : "Samoyed",
+            "gender" : "Hembra",
+            "date" : "15/06/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3290000/3298000/3298190_800.jpg"
+        },
+        {
+            "race" : "Wolfdog",
+            "gender" : "Hembra",
+            "date" : "21/06/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3290000/3298000/3298267_800.jpg"
+        },
+        {
+            "race" : "Siberian Husky",
+            "gender" : "Hembra",
+            "date" : "05/04/2024",
+            "img": "https://petkey.blob.core.windows.net/resource/images/3250000/3254000/3254961_800.jpg"
+        }
+    ]
+
+}
