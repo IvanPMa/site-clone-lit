@@ -4,7 +4,8 @@ export class NavLit extends LitElement {
     static get properties() {
         return {
             img: {type:String},
-            buttons: {type: Array}
+            buttons: {type: Array},
+            contact : {type: String}
         }
     }
 
@@ -12,10 +13,10 @@ export class NavLit extends LitElement {
         super();
         this.img = "";
         this.buttons = [];
+        this.contact  = "";
     }
 
     render(){
-        console.log(this.buttons);
         return html`
             <div class="container">
                 <div class="sub-container">
@@ -44,7 +45,7 @@ export class NavLit extends LitElement {
                             <span class="third-element">
                                 <a href="/" class="contact">
                                     <img src="">
-                                    (55) 9221 5810
+                                    ${this.contact}
                                 </a>
                             </span>
                         </div>
